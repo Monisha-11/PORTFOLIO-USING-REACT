@@ -90,286 +90,223 @@ export default Portfolio;
 ## STYLE.CSS
 ```java
 
-body{
-    margin: 0%;
+*{
+  margin: 0;
+  padding: 0;
 }
-header {
-    height: 712px;
-    width: 100vw;
-    background: rgb(156, 115, 61);
-    overflow: hidden;
+html{
+  scroll-behavior: smooth;
+}
+.navbar{
+  display : flex;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+.navbar::before{
+  content: "";
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.navbar ul{
+  display : flex;
+  list-style: none;
+}
+.navbar ul li{
+  font-size: 1.1rem;
+}
+.navbar ul li a{
+  padding: 5px 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.navbar ul li a:hover{
+  border-bottom: 2px solid yellow;
+}
+#home{
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  font-size: 25px;
+}
+#home::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url('bg1.jpg') no-repeat center center/cover;
+  height: 1100px;
+  width: 100%;
+  z-index: -1;
+  opacity: .7;
+}
+.heading{
+  color: rgb(240, 243, 246);
+  font-size: 3rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  transform: scale(1,1.3);
+}
+#portfolio{
+  display: flex;
+  flex-direction: column;
+  background-color: #A29490;
+}
+#portfolio h1{
+  margin: 60px;
+
+
+  
+}
+.gallery{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.gallery img{
+  width: 560px;
+  height: 840px;
+  padding: 10px;
+  margin: 10px;
+}
+.gallery img:hover{
+  background-color: white;
+  cursor: pointer;
 }
 
-#banner {
-   object-fit: cover;
-   opacity: 0.5;
+#education{
+  display: flex;
+  flex-direction: column;
+  background-color: #A29490;
 }
+#education h1{
+  margin: 60px;
 
-.menubar{
-    position: absolute;
-    color: #ffffff;
-    font-family: Garamond, serif;
-    font-size:x-large;
-    top: 0%;   
-    font-weight: 300;
-    cursor: pointer;
 }
+.columns{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 50px;
+}
+.box{
+  height: 250px;
+  width: 600px;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 20px;
+  margin: 80px;
+  padding: 20px;
+}
+.box:hover {
+  transition-duration: 0.1s;
+  background-color: #7e645e;
+}
+.box h2{
+  color: rgb(253, 253, 253);
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.box p{
+  color: white;
+  font-size: 1.4rem;
+}
+#about{
+  display: flex;
+  flex-direction: column;
+  height: 1000px;
+  background-color:#A29490;
+}
+#about h1{
+  color:white;
+  margin: 55px;
+}
+#about h2{
+  color: white;
+  font-size: 2.5rem;
 
-.m1{
-    left:25%;
+  
+  padding-right: 200px;
 }
-
-.m2{
-    left: 37%;
+#about p{
+  color: white;
+  font-size: 1.8rem;
 }
-
-.m3{
-    left: 55%;
+.about{
+  display: flex;
 }
-
-.m4{
-    left: 68%;
+.about img{
+  width: 600px;
+  height: 600px;
+  padding: 0px 60px;
 }
-#name{
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-family: Garamond, serif;
-    font-size: 610%;
+.name{
+  padding: 10px;
 }
-
-#info{
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 200%;
-}
-
-.myinfo{
-    height: 712px;
-    width: 100vw;
-    background: rgb(232, 223, 197);
-}
-
-.container{
-    display: block;
-    width: 70%;
-    background-color: rgb(255, 255, 255);
-    height: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 30px;
-}
-
-#study{
-    border-radius: 80px;
-}
-
-#title{
-    position: absolute;
-    top: 130%;
-    left: 43%;
-    font-size: 23px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    color: #605e5e;
-}
-
-#description
-{
-    position: absolute;
-    top: 137%;
-    left: 43%;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(134, 119, 79);
-}
-
-#title2{
-    position: absolute;
-    top: 150%;
-    left: 43%;
-    font-size: 23px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    color: #605e5e;
-}
-
-#description2
-{
-    position: absolute;
-    top: 157%;
-    left: 43%;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(134, 119, 79);
-}
-
-.layer{
-    display: block;
-    width: 100%;
-    background-color: #6f7ca3;
-    top: 500%;
-    height: 70%;
-}
-
-.box1{
-    height: 50%;
-    width: 20%;
-    background-color: #ffffff;
-}
-
-.c1{
-    top: 500%;
-    margin-left: 10%;
-}
-
-.c2{
-    margin-left: 30%;
-}
-
-.c3{
-    margin-left: 50%;
-    margin-top: -500px;
-}
-
-.c4{
-    margin-left: 70%;
-    margin-top: 2px;
-}
-
-.box2{
-    height: 50%;
-    width: 20%;
-    background-color: #857f7f;
-}
-
-.c5{
-    margin-left: 10%;
-    margin-top: -250px;
-}
-
-.c6{
-    margin-left: 30%;
-    margin-top: -498px;
-}
-
-.c7{
-    margin-left: 50%;
-    margin-top: -2px;
-}
-
-.c8{
-    margin-left: 70%;
-    margin-top: -498px;
-}
-
-.c5:hover, .c6:hover, .c7:hover, .c8:hover {
-    transition-duration: 0.1s;
-    background-color: #6f7ca3;
-}
-
-.skill{
-    color: #6f7ca3;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight:200;
-    margin-left: 4%;
-    font-size: x-large;
-}
-
-.des{
-    color: #ffffff;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight:200;
-    margin-left: 8%;
-    margin-right: 8%;
-    font-size: x-large;
-}
-
-.containersoft{
-    display: block;
-    width: 50%;
-    background-color: #6f7ca3;
-    height: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 30px;
-}
-
-#softskills{
-    border-radius: 80px;
-    margin-top: 2px;
-}
-
-#skillset{
-    position: absolute;
-    top: 317%;
-    left: 50%;
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    color: #d1cece;
-}
-
-#tasks{
-    position: absolute;
-    top: 325%;
-    left: 50%;
-    font-size: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 100;
-    color: #d1cece;
-}
-
-.footer{
-    display: block;
-    width: 100%;
-    background-color: #a29d9d;
-    height: 100px;
-    margin-top: 7%;
-}
-
-.frame{
-    width: 1000px;
-    /* border: 2px solid #ffffff; */
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #contact{
-    color: #ffffff;
-    font-weight: bolder;
-    font-size: 200%;
-    padding-top: 0%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #A29490;
+  height: 800px;
+  padding-top: 200px;
+  
+}
+#contact h1{
+  margin: 10px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input{
+  padding: 15px 20px;
+  margin: 15px;
+  width: 40%;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background-color: rgba(0,0,0,0.5);
+  color: #A29490;
+  font-size: 1.2rem;
+}
+#message{
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.5);
+  color: #A29490;
+  height: 250px;
+  width: 750px;
+  font-size: 1.2rem;
+
+}
+#submit{
+  padding: 15px 20px;
+  margin: 30px;
+  width: 15%;
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.5);
+  color: #A29490;
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+}
+#submit:hover{
+  background-color: rgb(27, 181, 3);
+  color: #ffffff;
+  cursor: pointer;
 }
 
-.button1{
-    top: 10%;
-    padding: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 20px;
-    background-color:rgb(232, 223, 197);
-    border-radius:50px;
-    color: #777474;
-    border:none;
-    font-family: sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-    left: 100%;
-} 
 
-.button1:hover {
-    transition-duration: 0.1s;
-    background-color: rgb(255, 255, 255);
-    border: 3px solid rgb(232, 223, 197);
-}
 ```
 APP.JS
 ```java
