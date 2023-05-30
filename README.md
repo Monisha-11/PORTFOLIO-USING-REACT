@@ -323,3 +323,16 @@ function App() {
 
 export default App;
 ```
+
+
+## OUTPUT
+<img width="1261" alt="image" src="https://github.com/Monisha-11/PORTFOLIO-USING-REACT/assets/93427240/cd4d06f5-672c-4a1e-8a01-2f6989e493b2">
+<img width="1263" alt="image" src="https://github.com/Monisha-11/PORTFOLIO-USING-REACT/assets/93427240/35d1cef5-c285-4794-8a91-5079d190098d">
+<img width="1262" alt="image" src="https://github.com/Monisha-11/PORTFOLIO-USING-REACT/assets/93427240/e046a74f-48d0-4552-8577-10169ccb14e9">
+<img width="1261" alt="image" src="https://github.com/Monisha-11/PORTFOLIO-USING-REACT/assets/93427240/0c65e2aa-212c-43e3-ba2c-f8fcbc974328">
+<img width="1259" alt="image" src="https://github.com/Monisha-11/PORTFOLIO-USING-REACT/assets/93427240/69728a28-94ef-4b32-a13e-3098f9aec52f">
+
+
+
+
+
